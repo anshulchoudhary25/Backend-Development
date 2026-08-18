@@ -6,4 +6,4 @@
 ---
 ## lab
 
-[Experiment 1](./lab/Exp%201/index.html)
+[Experiment 1](./lab/Exp%201/Report.md)
