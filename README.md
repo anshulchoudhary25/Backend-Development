@@ -6,6 +6,6 @@
 ---
 ## lab
 
-[Experiment 1](./lab/Exp_1/Report.md)
-[Experiment 12](./lab/Exp_12/Report.md)
-[Experiment 12B](./lab/Exp_12B/Report.md)
+- [Experiment 1](./lab/Exp_1/Report.md)
+- [Experiment 12](./lab/Exp_12/Report.md)
+- [Experiment 12B](./lab/Exp_12B/Report.md)
