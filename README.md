@@ -6,6 +6,6 @@
 ---
 ## lab
 
-- [Experiment 1](./lab/Exp_1/Report.md)
-- [Experiment 12](./lab/Exp_12/Report.md)
-- [Experiment 12B](./lab/Exp_12B/Report.md)
+- [Experiment 1 - Create a web page with all possible elements of HTML5](./lab/Exp_1/Report.md)
+- [Experiment 12 - Node.js, Express.js, and EJS Templating](./lab/Exp_12/Report.md)
+- [Experiment 12B - Using Node.js to Manage Sessions & Cookies](./lab/Exp_12B/Report.md)
