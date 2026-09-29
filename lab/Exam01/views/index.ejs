@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Notes</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>My Notes</h1>
+
+            <a href="/notes/new" class="add-button">
+                + Add New Note
+            </a>
+        </header>
+
+        <% if (notes.length === 0) { %>
+
+            <div class="empty">
+                <h2>No Notes Available</h2>
+                <p>Start by adding your first note.</p>
+            </div>
+
+        <% } else { %>
+
+            <div class="notes-grid">
+
+                <% notes.forEach(note => { %>
+
+                    <div class="note-card">
+
+                        <h2><%= note.title %></h2>
+
+                        <p class="content">
+                            <%= note.content %>
+                        </p>
+
+                        <p>
+                            <strong>Category:</strong>
+                            <%= note.category || "General" %>
+                        </p>
+
+                        <p class="date">
+                            <strong>Created:</strong>
+                            <%= new Date(note.createdAt).toLocaleString() %>
+                        </p>
+
+                        <form
+                            action="/notes/<%= note._id %>/delete"
+                            method="POST"
+                        >
+                            <button type="submit" class="delete-button">
+                                Delete
+                            </button>
+                        </form>
+
+                    </div>
+
+                <% }) %>
+
+            </div>
+
+        <% } %>
+
+    </div>
+
+</body>
+</html>
